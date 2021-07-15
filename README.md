@@ -33,15 +33,19 @@ This is a [Next.js 11](https://nextjs.org/blog/next-11) project starter template
 Install the template with `create-next-app` and this repo as the `--example`
 
 ```bash
-npx create-next-app -e https://github.com/magnatome/next-starter-app-website
-# or
-yarn create next-app -e https://github.com/magnatome/next-starter-app-website
+npx create-next-app -e https://github.com/magnatome/next-starter-app-template
+```
+
+**or**
+
+```
+yarn create next-app -e https://github.com/magnatome/next-starter-app-template
 ```
 
 **Option 2**
 Clone the repo either directly, from a fork or from a new repo generated on
-Github by using this template. Move into your new project's top level directory
-and run:
+Github by [using this template](https://github.com/magnatome/next-starter-app-template/generate).
+Move into your new project's top level directory and run:
 
 ```bash
 npm install
