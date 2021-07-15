@@ -1,4 +1,4 @@
-This is a [Next.js @ 10.2.3](https://nextjs.org/) project starter template.
+This is a [Next.js 11](https://nextjs.org/blog/next-11) project starter template.
 
 ## What this template includes
 

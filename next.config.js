@@ -1,24 +1,16 @@
 // Next.js configuration
+// You can add advanced behavior here https://nextjs.org/docs/api-reference/next.config.js/introduction
 
 module.exports = {
-  // For @netlify/plugin-nextjs, target must be "serverless"
-  target: 'serverless',
+  // If you deploy to Netlify, target must be "serverless"
+  // target: 'serverless',
 
   webpack: (config, { isServer }) => {
-    // Fixes packages that depend on fs/module module
     if (!isServer) {
-      return {
-        ...config,
-        resolve: {
-          ...config.resolve,
-          fallback: {
-            ...config.resolve.fallback,
-            fs: false,
-          },
-        },
-      }
+      // Fixes packages that depend on fs/module module
+      // eslint-disable-next-line
+      config.resolve.fallback.fs = false
     }
-
     return config
   },
 }
