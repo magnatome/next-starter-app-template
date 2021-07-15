@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 import GlobalStyles from 'styles/GlobalStyles'
+import Layout from 'components/Layout'
 
 const App = ({ Component, pageProps }) => (
   <>
@@ -15,7 +16,9 @@ const App = ({ Component, pageProps }) => (
       <meta name="description" content="My website description." key="description" />
     </Head>
     <GlobalStyles />
-    <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   </>
 )
 
