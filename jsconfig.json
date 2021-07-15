@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "target": "ESNext",
+    "jsx": "preserve"
+  },
+  "include": ["src/**/*"]
+}

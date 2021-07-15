@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run prettier on staged files and git fixup the files with changes
+npm run pretty-quick --staged
+
+# Run ESLint on staged files
+npm run lint-staged
